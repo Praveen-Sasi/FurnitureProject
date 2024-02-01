@@ -1,0 +1,67 @@
+#register{
+    padding-top: 5%;
+    height: 890px;
+    text-align: center;
+}
+h2{
+    font-size: 50px;
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#text{
+    padding-top: 2%;
+    text-align: center;
+    color: #737373;
+}
+#text1{
+    text-align: center;
+    color: #737373;
+}
+#FirstName{
+    height: 60px;
+    font-size: medium;
+}
+#LastName{
+    height: 60px;
+    font-size: medium;
+}
+#email{
+    height: 60px;
+    font-size: medium;
+}
+#password{
+    height: 60px;
+    font-size: medium;
+}
+#repassword{
+    height: 60px;
+    font-size: medium;
+}
+#registerbtn{
+    background-color:  #415b48;
+    text-align: center;
+    width: 490px;
+    height: 50px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 2%;
+}
+#agree{
+    margin-left: 0%;
+    font-size: larger;
+}
+input{
+    font-size:large ;
+   background-color: #fff;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+*{
+    background-color: #f4f1ea; 
+    opacity: 10px;
+}
+#account{
+  
+   padding-top: 1%;
+   font-size :medium;
+}

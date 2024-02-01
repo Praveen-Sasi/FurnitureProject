@@ -1,0 +1,29 @@
+<app-navbar></app-navbar><div class="container-fluid"><div id="login"  >
+    <h2>WELCOME</h2>
+    <h6 id="text">Log in to your account to check your previous</h6>
+    <h6 id="text1">orders, add or edit your address!</h6><br>
+    <div class="row " class="d-flex justify-content-center">
+        <div class="col-4">
+            <input type="email" id="name" name="email" placeholder="Email" class="form-control" [(ngModel)]="email" required>
+        </div>
+    </div>
+    <br>
+    <div class="row mt-1" class="d-flex justify-content-center">
+        <div class="col-4"><input type="password" id="pass" name="password" placeholder="password" class="form-control" [(ngModel)]="password" required>
+        </div>
+    </div>
+    <br>
+     <div class="row" class="d-flex justify-content-center"> 
+        <div class="col-4">
+            <input type="button" id="loginbtn" name="login" value="LOGIN" (click)="login()" class="btn" required>
+        </div>
+     
+   </div>
+   <div class="row " >
+    <div class="col"><p id="text2">Create Account <i class="ri-arrow-right-line"></i></p>
+    </div>
+    <div class="col"><p id="text3">Forgot Password <i class="ri-arrow-right-line"></i></p>
+    </div>
+   </div>
+   
+</div>

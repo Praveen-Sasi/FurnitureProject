@@ -1,0 +1,46 @@
+<app-navbar></app-navbar>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6"> 
+            <h5 id="brand_name">{{productData.brandname}}</h5>
+            <img [src]="productData.picture" height="500px" width="600px">
+            <div class="row mt-4">
+                <div class="col-sm-6"><input type="button"  class="btn btn-success" value="BUY NOW" name="buy"></div>
+                <div class="col-sm-6"><input type="button" class="btn btn-success" value="Add to Cart" name="cart"></div>
+
+            </div><br>
+            <b id="green">Contact us for customization<br></b>
+<br>
+<b style="color: black;margin-left:24%;"> <i class="ri-phone-fill"></i>+91 13344133127</b><br><hr>
+        </div>
+        <div class="col-sm-6">
+            <h4 id="brand_name"><hr>{{productData.name}}</h4><br>
+            <p>{{productData.shortdes}}<p> 
+              <span >{{productData.ratings}}<b><ngb-rating  [rate]="productData.ratings"/></b><b class="icon"  ><i class="ri-share-line"></i></b> <b class="icon" style="margin-left: 2%;"><i class="ri-heart-line"></i></b> </span> 
+            <p id="price">{{productData.price|currency:"INR"}}  </p>
+            <p id="discount">{{productData.discount}}% <span id="disprice">{{productData.disAcc|currency:"INR"}}</span></p>
+            <hr><div class="row">
+                <div class="col"><p>Brand</p></div>
+                <div class="col">{{productData.brandname}}</div>
+            </div>
+            <div class="row">
+                <div class="col"><p>Color</p></div>
+                <div class="col">{{productData.color}}</div>
+            </div>
+            <div class="row">
+                <div class="col"><p>Warrenty</p></div>
+                <div class="col">{{productData.warranty}}</div>
+            </div><hr>
+            <p><b>About this item:</b></p>
+            <p><i class="ri-list-unordered"></i>{{productData.descrip1}}</p>
+            <p><i class="ri-list-unordered"></i>{{productData.descrip2}}</p>
+            <p><i class="ri-list-unordered"></i>{{productData.descrip3}}</p>
+            <p> Note:{{productData.note}}</p>
+            <div class="row">
+                <div class="col"><b>Ready to ship-</b><br>Shipping date</div>
+                <div class="col"><b>Estimated</b><br>7 to 14days</div>
+            </div>
+        </div>
+    </div>
+</div><br><br>
+<app-about></app-about>

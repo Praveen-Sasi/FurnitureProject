@@ -1,0 +1,67 @@
+<div class="info" class="col-12">
+  <h3>Personal Information</h3>
+  <div class="col">
+
+    <div>
+      <h6>Name* <span *ngIf="!edit1"><p class="edit" (click)="edit1=!edit1">edit</p></span>
+      </h6>
+      <div class="row">
+        <div class="col">
+          <input class="form-control mt-4" type="text" name="FirstName" [(ngModel)]="FirstName" [disabled]="!edit1">
+        </div>
+        <div class="col">  
+          <input class="form-control mt-4" type="text" name="LastName" [(ngModel)]="LastName" [disabled]="!edit1">
+        </div>
+        <div class="col mt-4" *ngIf="edit1"><input type="button" class="btn btn-info" name="save" value="Save" (click)="edit1=!edit1">
+      </div>
+
+
+    </div>
+    <br><br>
+    <div  >
+      <h6>Gender* <span *ngIf="!edit2"><p class="edit" (click)="edit2=!edit2">edit</p></span>
+      </h6>
+      <input type="radio" id="male" name="gender" value="male" [disabled]="!edit2">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" [disabled]="!edit2">
+        <label for="female">Female</label><br><br>
+  <div class="col" *ngIf="edit2">
+      <input type="button" class="btn btn-info" name="save" value="Save"  (click)="edit2=!edit2">
+  </div>
+    </div>
+    <br><br>
+    
+    <div class="col"> 
+      <h6>Email*<span *ngIf="!edit3"><p class="edit" (click)="edit3=!edit3">edit</p></span>
+      </h6>
+      <input type="email" name="mail" class="form-control mt-4" [disabled]="!edit3"><br>
+    <div *ngIf="edit3">  <input type="button" class="btn btn-info" name="save" value="Save" (click)="edit3=!edit3">
+    </div></div><br><br>
+   
+  <div class="col" >
+    <h6>Mobile Number* <span *ngIf="!edit4"><p class="edit" (click)="edit4=!edit4">edit</p></span></h6>
+    <input type="number" name="mobile" class="form-control" [disabled]="!edit4"><br>
+   <div *ngIf="edit4"> <input type="button" class="btn btn-info" name="save" value="Save" (click)="edit4=!edit4">
+  </div></div>
+</div>
+<br>
+<br>
+<div class="col">
+  <h6>FAQs</h6>
+  <p class="text"><b>What happens when I update my email address (or mobile number)?</b></p>
+  <p class="text">Your login email id (or mobile number) changes, likewise. You'll receive all your account
+    related communication on your updated email address (or mobile number).</p>
+
+
+  <p class="text"><b>When will my account be updated with the new email address (or mobile number)?</b></p>
+
+  <p class="text">It happens as soon as you confirm the verification code sent to your email (or mobile) and save the
+    changes.</p>
+
+  <p class="text"><b>What happens to my existing account when I update my email address (or mobile number)?</b></p>
+
+  <p class="text">Updating your email address (or mobile number) doesn't invalidate your account. Your account remains
+    fully functional. You'll continue seeing your Order history, saved information and personal details.</p>
+  <p class="text"><b>Does my account get affected when I update my email address?</b></p>
+  <p class="text">Our brand has a 'single sign-on' policy. Any changes will reflect in your account also.</p>
+</div>

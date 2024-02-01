@@ -1,0 +1,61 @@
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet"><div>
+    <nav class="navbar navbar-expand-lg navbar ">
+        <div id="nav" class="container-fluid">
+          <a class="navbar-brand" class="text-light" href="#" 
+          style="text-decoration: none;
+          font-size: large;">LOGO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+         
+          <div class="d-flex justify-content-end" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <form class="d-flex">
+                <input class="form-control"  id="search" type="search" placeholder="Search" aria-label="Search">
+              </form>
+              <li class="nav-item " >
+                <a class="nav-link active" aria-current="page" href="javascript:void(0);" routerLink="/"><b class="text-light">Home</b></a>
+              </li>
+               <li><div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
+                <button
+                  type="button"
+                  class="btn  me-2"
+                  id="dropdownManual"
+                  ngbDropdownAnchor
+                  (focus)="myDrop.open()">
+                  <b class="text-light">Account</b>
+                </button>
+                <div ngbDropdownMenu aria-labelledby="dropdownManual">
+                  <ng-container *ngIf="this.user.isAuthenticated(); then Auth;else notAuth ">
+
+                  </ng-container>
+                  <ng-template #notAuth>
+                    <button  ngbDropdownItem  routerLink="/login"><i class="ri-user-follow-line"></i><span class="ms-2">Login</span></button>
+                  <button ngbDropdownItem  routerLink="/register"><i class="ri-user-add-fill"></i><span  class="ms-2"> New Customer? Sign up</span></button>
+                 
+                  </ng-template>
+                  <ng-template #Auth>
+                    <button ngbDropdownItem  routerLink="/register"><i class="ri-user-add-fill"></i><span  class="ms-2"> New Customer? Sign up</span></button>
+                    <button ngbDropdownItem  routerLink="/profile"><i class="ri-account-circle-fill"></i><span  class="ms-2">Profile</span></button>
+                    <button ngbDropdownItem><i class="ri-dropbox-fill"></i><span  class="ms-2">My Orders</span></button>
+                    <button ngbDropdownItem><i class="ri-heart-fill"></i><span  class="ms-2">Wishlist</span></button>
+                    <button ngbDropdownItem><i class="ri-user-unfollow-fill"></i><span  class="ms-2">LogOut</span></button>
+
+                  </ng-template>
+                
+                  
+                 
+                </div>
+              </div></li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0);" routerLink="/Support"><b class="text-light">Support</b></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:void(0);" routerLink="/cart"><b class="text-light"><i class="ri-shopping-cart-2-line"></i></b></a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+</div>

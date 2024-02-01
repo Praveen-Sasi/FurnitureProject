@@ -1,0 +1,52 @@
+<div class="address" class="col-12">
+    <h6  ><b>Manage Address</b></h6><br>
+    <h6  class="row-3 border" style="margin-left: 10px;
+    color: #0cc2c8;
+    font-size: medium;" (click)="clickAddress()"> + ADD A NEW ADDRESS</h6><br>
+    <div *ngIf="screen1" class="container"><div class="input1" class="row mt-2">
+        <div class="col">
+            <input type="text" class="form-control" name="name" placeholder="Name">
+        </div>
+        <div class="col">
+            <input type="number" class="form-control" name="number" placeholder="Mobile Number">
+        </div>
+    </div>
+    <div class="input1" class="row mt-4">
+        <div class="col">
+            <input type="text" class="form-control" name="locality" placeholder="Locality">
+        </div>
+        <div class="col">
+            <input type="number" class="form-control" name="pin" placeholder="Pincode">
+        </div>
+    </div>
+    <div class="input1" class="row mt-4">
+        <div class="col"><textarea placeholder="Address"></textarea></div></div>
+       
+    <div class="input1" class="row mt-4">
+        <div class="col">
+            <input type="text" class="form-control" name="locality" placeholder="City/Town/District">
+        </div>
+        <div class="col">
+            
+            <select name="State" id="State">
+                <option >Choose a State</option>
+                <option value="Tamilnadu">Tamilnadu</option>
+                <option value="Kerala"> Kerala</option>
+                <option value="Andhra">Andhra</option>
+              </select>
+        </div>
+    </div>
+    <div  class="row mt-4">
+        <div class="col mt-2"><label>Address type</label><br><br>
+   
+    
+    <input type="radio"  name="address" value="home">
+  <label for="home">Home</label><br>
+  <input type="radio"  name="address" value="office">
+  <label for="css">Office</label><br>
+</div>
+</div>
+    <div class="row mt-4">
+        <div class="col"><input type="button" name="save" class="btn btn-info" value="Save"></div>
+       <input type="button" id="btn1" name="cancel" class="btn  " value="Cancel"></div>
+</div>

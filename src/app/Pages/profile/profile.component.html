@@ -1,0 +1,59 @@
+<app-navbar></app-navbar>
+<app-header></app-header>
+
+
+
+  <div class="container overflow-hidden">
+  <div class="row MT-3 gy-4 ">
+    <div class="col-3">
+      <div id="border1" class="p-4 border ">
+        <img src="assets/Images/logo2.jpg" >
+        <h6 class="mt-4 ">Hello! Ramya</h6></div> 
+       
+      
+    </div>
+    <div class="col-6">
+     
+    </div>
+    <div id="cat" class="col-6">
+      <div class="p-3 border ">
+            <h6 class="heading"><p><b>MY ORDERS</b></p></h6>
+       <hr>
+        <div class="col">
+            <h6 class="heading"><p><b>ACCOUNT SETTINGS</b></p></h6>
+        </div>
+        <div class="col" >
+            <h6 class="side-heading" (click)="clickinfo()"><p><b>Personal Information</b></p></h6>
+        </div>
+        <div class="col">
+            <h6 class="side-heading" (click)="clickaddress()"><p><b>Manage Adressess</b></p></h6>
+        </div>
+     
+        <div class="col">
+            <h6 class="heading"><p><b>MY STUFFS</b></p></h6>
+        </div>
+        <div class="col">
+            <h6 class="side-heading" (click)="clickWishlist()"><p><b>My Wishlist</b></p></h6>
+        </div><div class="col">
+            <h6 class="side-heading" (click)="clickReview()"><p><b>My Reviews and Ratings</b></p></h6>
+        </div>
+        <div class="col">
+            <h6 class="heading"><p><b>Logout</b></p></h6>
+      
+    </div>
+      </div>
+    </div>
+    <div  class="col-8">
+      <div class="p-3 border" *ngIf="screen1" > <app-info></app-info> 
+</div>
+
+    <div class="p-3 border" *ngIf="screen2" ><app-address></app-address>
+</div>
+<div class="p-3 border" *ngIf="screen4" ><app-wishlist></app-wishlist>
+</div>
+<div class="p-3 border" *ngIf="screen3" ><app-review></app-review>
+</div>
+    
+    
+
+</div></div>

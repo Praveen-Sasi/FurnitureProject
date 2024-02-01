@@ -1,0 +1,50 @@
+
+<app-header></app-header>
+
+<div class="container-fluid"><div id="register"  >
+    <h2>WELCOME</h2>
+    <h6 id="text">Sign up with us to get updates, view your</h6>
+    <h6 id="text1">previous orders, add or edit your address!</h6><br>
+    <div class="row " class="d-flex justify-content-center">
+        <div class="col-4">
+            <input type="text" id="FirstName" name="firstName" placeholder="first Name" [(ngModel)]="firstName" class="form-control" required>
+        </div>
+    </div>
+    <br>
+    <div class="row " class="d-flex justify-content-center">
+        <div class="col-4">
+            <input type="text" id="LastName" name="lastName" [(ngModel)]="lastName" placeholder="last Name" class="form-control" required>
+        </div>
+    </div>
+    <br>
+    <div class="row " class="d-flex justify-content-center">
+        <div class="col-4">
+            <input type="email" id="email" name="email" placeholder="Email" [(ngModel)]="email" class="form-control" required>
+        </div>
+    </div>
+    <br>
+    <div class="row mt-1" class="d-flex justify-content-center">
+        <div class="col-4"><input type="password" id="password" name="password" [(ngModel)]="Password" placeholder="Password" class="form-control" required>
+        </div>
+    </div>
+    <br>
+    <div class="row mt-1" class="d-flex justify-content-center">
+        <div class="col-4"><input type="password" id="repassword" name="cPassword" [(ngModel)]="cPassword" placeholder="Confirm-Password" class="form-control" required>
+        </div>
+    </div>
+    <br>
+    <form action="">
+        <input type="checkbox" id="agree" name="agree" value="" >
+        <label for="policies">  Sign up to receive emails about the latest news and get a 100 off</label>
+        <br><label for="policies"> discount code for your first purchase.</label>
+      </form>
+     <div class="row" class="d-flex justify-content-center"> 
+        <div class="col-4">
+            <input type="button" id="registerbtn" name="register" (click)="register()" value="CREATE ACCOUNT" class="btn" required>
+        </div>
+    
+   </div>
+   <div id="account" class="row" class="d-flex justify-content-center">
+    <div class="col-4">Have a Account? Login in! <i class="ri-arrow-right-line"></i></div>
+</div>
+</div>

@@ -1,0 +1,78 @@
+<app-navbar></app-navbar>
+
+
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet"><div>
+  <div class="container-fluid">
+    <div class="row g-0 mt-2">
+        <div id="left" class="col-sm-5 col-md-2">
+          
+           
+    
+              <h2 id="fil"><b>Filters</b></h2>
+              <h5 id="cat"><b>Categories</b></h5>
+              <h6 id="hd1" (click)="getallProducts()"> All</h6>
+
+              <h6 id="hd2" (click)="sofaFilter()"> Sofa</h6>
+              <h6 id="hd3" (click)="bedFilter()">Bed</h6>
+              <h6 id="hd4" (click)="chairFilter()">Chair</h6>
+              <h6 id="hd5" (click)="babyFilter()">Baby Furniture</h6>
+              <h6 id="hd6" (click)="cupboardFilter()">Cupboard</h6>
+
+              <h6 id="hd7" (click)="swingFilter()"> Swing</h6>
+              <h6 id="hd8" (click)="tableFilter()"> Table</h6>
+              <hr><hr>
+              <h2 id="fil"><b>Discount</b></h2>
+              
+              <input id="disc5" type="checkbox" name="5" [checked]="disc5" (click)="discFilter('5')" ><label> - 5%</label><br>
+
+              <input id="disc10" type="checkbox" [checked]="disc10" value="70" (click)="discFilter('10')"><label> - 10%</label><br>
+              <input id="disc20" type="checkbox" [checked]="disc20" value="60" (click)="discFilter('20')"><label> - 20%</label><br>
+
+              <input id="disc30" type="checkbox" [checked]="disc30" value="30" (click)="discFilter('30')" ><label> - 30%</label><br>
+              <input id="disc40" type="checkbox" [checked]="disc40" value="40" (click)="discFilter('40')" ><label> - 40%</label><br>
+              <input id="disc50" type="checkbox" [checked]="disc50" value="50" (click)="discFilter('50')" ><label> - 50%</label><br>
+              <hr><hr>
+              <h2 id="fil"><b>Price</b></h2>
+              
+              <input id="value1" type="checkbox" value="5000" name=5000 ><label>less than 5000</label><br>
+
+              <input id="value2" type="checkbox" value=15000><label> 5000-10000</label><br>
+
+              <input id="value3" type="checkbox" value=20000><label> 10000-15000</label><br>
+              <input id="value4" type="checkbox" value=25000><label> 15000-25000</label><br>
+              <input id="value5" type="checkbox" value=50000><label>25000-30000</label><br>
+              <input id="value6" type="checkbox" value=15000><label>30000-50000</label><br>
+
+    
+        </div>
+        <!-- <------------------------------->
+        <div class="col-6 col-md-9">
+    
+            <div class="card bg-dark text-white">
+                <img src="assets/Images/bed.6.jpg" height="200px" width="1500px" class="card-img" alt="...">
+                <div class="card-img-overlay">
+                  <h3 class="card-title"><b>Rustic Interior </b></h3>
+                  <p class="card-text"></p>
+                  <p class="card-text"></p>
+                </div>
+              </div><br>
+<div class="row mt-4">
+    <div class="col-4" *ngFor="let product of productList">
+
+      
+          <div class="card-group">
+            <div class="card" routerLink="/individualPro/{{product.id}}" >
+              <img [src]="product.picture" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6 class="card-title"><p class="text-secondary" >{{product.brandname}} </p></h6>
+                <h6><b>{{product.name}}</b></h6>
+                <p class="card-text">{{product.shortdes}}</p>
+                <span id="sev" class="text-light ">{{product.ratings}}<b><ngb-rating  [rate]="3" /></b> </span>   <i id="heart" class="ri-heart-line"></i>         
+                <p id="last"><b class="text-dark" style="text-decoration: line-through;">{{product.price|currency:'INR'}}</b></p>
+                <p><b style="margin-left: 1%; color: green;">{{product.discount}}%</b> <span style="margin-left: 10%;">{{product.disAcc|currency:'INR'}}</span></p>
+              </div>             
+            </div></div><div></div></div>
+           
+                
+</div></div></div></div></div><br><br>
+         <app-about></app-about>
