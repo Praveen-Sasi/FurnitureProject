@@ -6,7 +6,8 @@
             <img [src]="productData.picture" height="500px" width="600px">
             <div class="row mt-4">
                 <div class="col-sm-6"><input type="button"  class="btn btn-success" value="BUY NOW" name="buy"></div>
-                <div class="col-sm-6"><input type="button" class="btn btn-success" value="Add to Cart" name="cart"></div>
+                <div class="col-sm-6"><input type="button" class="btn btn-success" (click)="removeitem(productData)" *ngIf="showremove" value="Remove item" name="cart"><input type="button" class="btn btn-success" (click)="addtocart(productData)" *ngIf="showadd" value="Add to Cart" name="cart"></div>&nbsp;
+                
 
             </div><br>
             <b id="green">Contact us for customization<br></b>

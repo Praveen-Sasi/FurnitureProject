@@ -6,33 +6,43 @@
       "email": "ramya123@gmail.com",
       "number": "9175883333",
       "password": "@123",
-      "id": 1
+      "id": "1"
     },
     {
       "firstName": "Ramya",
       "lastName": "S",
       "password": "1234",
       "email": "ramyabiew19@gmail.com",
-      "id": 2
+      "id": "2"
     },
     {
       "firstName": "Madhan",
       "lastName": "Jegan",
       "password": "1234",
       "email": "madhan123@gmail.com",
-      "id": 3
+      "id": "3"
     },
     {
       "firstName": "Yamini",
       "lastName": "A",
       "password": "1234",
       "email": "yamini123@gmail.com",
-      "id": 4
+      "id": "4"
+    },
+    {
+      "id": "020f"
+    },
+    {
+      "id": "366a",
+      "firstName": "praveen",
+      "lastName": "kumar",
+      "password": "123",
+      "email": "win.praveen001@gmail.com"
     }
   ],
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "brandname": "Rustic Interior",
       "category": "chair",
       "name": "REKART",
@@ -41,8 +51,8 @@
       "price": 10230,
       "disAcc": 9207,
       "discount": "10",
-      "color":"black",
-      "warranty":"5",
+      "color": "black",
+      "warranty": "5",
       "picture": "assets/Images/chair/chair.4.jpg",
       "descrip1": "Can Not Recline But Rocking to the Weight and You Can Control the Tension.The Height Can Be Adjusted and Armrest Can Be Pushed Up.Sit in It Comfort for Hours with No Aches or Pains !",
       "descrip2": "More Functions -- the Chair Have Lift and Rocker Mechanism.Seat Back.",
@@ -50,15 +60,15 @@
       "note": "Note: Products with electrical plugs are designed for use in the US. Outlets and voltage differ internationally and this product may require an adapter or converter for use in your destination. Please check compatibility before purchasing."
     },
     {
-      "id": 2,
+      "id": "2",
       "brandname": "Rustic Interior",
       "category": "sofa",
       "name": "The Couch",
       "shortdes": "The Rustic Interior Upholstery Suede/Linen Fabric Ambar Three Seater Sofa",
       "ratings": "4.3",
       "price": 26499,
-      "color":"black",
-      "warranty":"5",
+      "color": "black",
+      "warranty": "5",
       "discount": "5",
       "disAcc": 25174,
       "picture": "assets/Images/sofa/sofa.2.jpeg",
@@ -67,15 +77,15 @@
       "descrip3": "Furniture having intricate hand-painted details are individual unique pieces and may have slight distinctions and variance between the picture and actual product. • This product comes with 40 density foam in seat filling hence seat foam will get softer after the usage of 2 to 3 weeks. But seat foam won't be get sink during the warranty period."
     },
     {
-      "id": 3,
+      "id": "3",
       "brandname": "Rustic Interior",
       "category": "table",
       "name": "Led Slide Table",
       "shortdes": "【Decorate Your Room】Stylish appearance, it can decorate your room more beautifully .",
       "ratings": "4.5",
       "disAcc": 16000,
-      "color":"black",
-      "warranty":"5",
+      "color": "black",
+      "warranty": "5",
       "price": 20000,
       "discount": "20",
       "picture": "assets/Images/table/table.2.jpg",
@@ -84,7 +94,7 @@
       "descrip3": "Keep it beside your restful retreat in the master suite, and you're ready to start building a beautiful display! It features two spacious, 24"
     },
     {
-      "id": 4,
+      "id": "4",
       "brandname": "Rustic Interior",
       "category": "table",
       "name": "Coffee Table",
@@ -92,8 +102,8 @@
       "ratings": "4",
       "discount": "25",
       "disAcc": 26249,
-      "color":"black",
-      "warranty":"5",
+      "color": "black",
+      "warranty": "5",
       "picture": "assets/Images/table/table.4.jpg",
       "price": 34999,
       "descrip1": "Modern Design - This Modern Nightstand is made of MDF with superior craftsmanship for optimized strength and long lasting durability. Sleek design complements any room decor or any style of furniture. •",
@@ -101,7 +111,7 @@
       "descrip3": "Easy to Clean - This storage bedside table requires assembly. You just need to follow the instructions for easy installation. Smooth surface, easy to clean. Care Instructions: Wipe it clean with a dry cloth. Wipe any spills immediately. Always use coasters or mats while keeping hot, cold or wet materials on the table."
     },
     {
-      "id": 5,
+      "id": "5",
       "brandname": "Rustic Interior",
       "category": "cupboard",
       "name": "Wardrobe",
@@ -109,8 +119,8 @@
       "shortdes": "The oval shape allows the hangers to twist on the pole easily ",
       "ratings": "4.2",
       "disAcc": 39900,
-      "color":"black",
-      "warranty":"5",
+      "color": "black",
+      "warranty": "5",
       "picture": "assets/Images/cupboard/cupboard.2.jpg",
       "price": 42000,
       "descrip1": "Introducing the Adona WR1 Engineered Wood 1 Door Wardrobe in an adorable finish of Blue. •",
@@ -118,7 +128,7 @@
       "descrip3": "Organize your clothing, accessories, or even household items with ease, thanks to the well-designed interior layout. The strong hinges ensure smooth operation and long-lasting durability, while the stylish handle adds a modern touch. Security is paramount, and the Adona WR1 Wardrobe doesn't disappoint. "
     },
     {
-      "id": 6,
+      "id": "6",
       "brandname": "Rustic Interior",
       "category": "swing",
       "name": "Ergonomic Swing",
@@ -126,8 +136,8 @@
       "ratings": "4.7",
       "price": 9999,
       "disAcc": 8999,
-      "color":"black",
-      "warranty":"5",
+      "color": "black",
+      "warranty": "5",
       "discount": "10",
       "picture": "assets/Images/swing/swing.4.jpg",
       "descrip1": "Introducing the Adona WR1 Engineered Wood 1 Door Wardrobe in an adorable finish of Blue. •",
@@ -135,15 +145,15 @@
       "descrip3": "Organize your clothing, accessories, or even household items with ease, thanks to the well-designed interior layout. The strong hinges ensure smooth operation and long-lasting durability, while the stylish handle adds a modern touch. Security is paramount, and the Adona WR1 Wardrobe doesn't disappoint. "
     },
     {
-      "id": 7,
+      "id": "7",
       "brandname": "Rustic Interior",
       "category": "table",
       "name": "Bench Coffee Table",
       "shortdes": "These table leg and bench legs would add a timeless look to your expensive center piece .",
       "ratings": "4",
       "price": 2299,
-      "color":"black",
-      "warranty":"5",
+      "color": "black",
+      "warranty": "5",
       "disAcc": 1839,
       "discount": "20",
       "picture": "assets/Images/dinning/dinning.4.jpg",
@@ -152,7 +162,7 @@
       "descrip3": " Organize your clothing, accessories, or even household items with ease, thanks to the well-designed interior layout. The strong hinges ensure smooth operation and long-lasting durability, while the stylish handle adds a modern touch. Security is paramount, and the Adona WR1 Wardrobe doesn't disappoint. "
     },
     {
-      "id": 8,
+      "id": "8",
       "brandname": "Rustic Interior",
       "category": "sofa",
       "name": "Seater Sofa Set Plain",
@@ -161,23 +171,23 @@
       "price": 28999,
       "disAcc": 14499,
       "discount": "50",
-      "color":"black",
-      "warranty":"5",
+      "color": "black",
+      "warranty": "5",
       "picture": "assets/Images/sofa/sofa.3.jpg",
       "descrip1": " Introducing the Adona WR1 Engineered Wood 1 Door Wardrobe in an adorable finish of Blue. •",
       "descrip2": " This wardrobe exudes elegance with its sleek brown exterior to add a touch of sophistication to your space. With four mid-size shelves, this wardrobe offers ample storage space for all your essentials.  ",
       "descrip3": " Organize your clothing, accessories, or even household items with ease, thanks to the well-designed interior layout. The strong hinges ensure smooth operation and long-lasting durability, while the stylish handle adds a modern touch. Security is paramount, and the Adona WR1 Wardrobe doesn't disappoint. "
     },
     {
-      "id": 9,
+      "id": "9",
       "brandname": "Rustic Interior",
       "category": "Baby furniture",
       "name": "BaBy Crid",
       "shortdes": "Blended fabric of Cotton/polyester. Crib Sheet is 100% Cotton..",
       "ratings": "4.5",
       "discount": "70",
-      "color":"black",
-      "warranty":"5",
+      "color": "black",
+      "warranty": "5",
       "disAcc": 4199,
       "price": 13998,
       "picture": "assets/Images/baby/baby.2.jpg",
@@ -186,14 +196,14 @@
       "descrip3": " Organize your clothing, accessories, or even household items with ease, thanks to the well-designed interior layout. The strong hinges ensure smooth operation and long-lasting durability, while the stylish handle adds a modern touch. Security is paramount, and the Adona WR1 Wardrobe doesn't disappoint. "
     },
     {
-      "id": 10,
+      "id": "10",
       "brandname": "Rustic Interior",
       "category": "chair",
       "name": "Cane Handicraft Chair",
       "shortdes": "Organic Comfort: The design and flexible rattan construction provide a comfortable.",
       "ratings": "3.9",
-      "color":"black",
-      "warranty":"5",
+      "color": "black",
+      "warranty": "5",
       "price": 10500,
       "disAcc": 8400,
       "picture": "assets/Images/chair/chair.1.jpg",
@@ -203,14 +213,14 @@
       "descrip3": " Organize your clothing, accessories, or even household items with ease, thanks to the well-designed interior layout. The strong hinges ensure smooth operation and long-lasting durability, while the stylish handle adds a modern touch. Security is paramount, and the Adona WR1 Wardrobe doesn't disappoint. "
     },
     {
-      "id": 11,
+      "id": "11",
       "brandname": "Rustic Interior",
       "category": "bed",
       "name": "Sheesham Wood Bed",
       "shortdes": "Budhakish Furniture Solid Sheesham Wood Queen Size Bed with Storage . ",
       "ratings": "4.6",
-      "color":"black",
-      "warranty":"5",
+      "color": "black",
+      "warranty": "5",
       "price": 34499,
       "disAcc": 24149,
       "discount": "30",
@@ -220,14 +230,14 @@
       "descrip3": " Organize your clothing, accessories, or even household items with ease, thanks to the well-designed interior layout. The strong hinges ensure smooth operation and long-lasting durability, while the stylish handle adds a modern touch. Security is paramount, and the Adona WR1 Wardrobe doesn't disappoint. "
     },
     {
-      "id": 12,
+      "id": "12",
       "brandname": "Rustic Interior",
       "category": "table",
       "name": "Wooden Nightstand",
       "shortdes": "Minimalist White Bedroom Wooden Nightstand with 2 Drawers Black Metal Legs ",
       "ratings": "4.2",
-      "color":"black",
-      "warranty":"5",
+      "color": "black",
+      "warranty": "5",
       "price": 25499,
       "disAcc": 17849,
       "discount": "30",
@@ -237,15 +247,15 @@
       "descrip3": " Organize your clothing, accessories, or even household items with ease, thanks to the well-designed interior layout. The strong hinges ensure smooth operation and long-lasting durability, while the stylish handle adds a modern touch. Security is paramount, and the Adona WR1 Wardrobe doesn't disappoint. "
     },
     {
-      "id": 13,
+      "id": "13",
       "brandname": "Rustic Interior",
       "category": "table",
       "name": "Nightstand Drawer",
       "shortdes": "Beautiful bedside tables with back wall in table colour.",
       "picture": "assets/Images/table/table.1.jpg",
       "ratings": "4.7",
-      "color":"black",
-      "warranty":"5",
+      "color": "black",
+      "warranty": "5",
       "disAcc": 2279,
       "discount": "40",
       "price": 3799,
@@ -254,15 +264,15 @@
       "descrip3": "Organize your clothing, accessories, or even household items with ease, thanks to the well-designed interior layout. The strong hinges ensure smooth operation and long-lasting durability, while the stylish handle adds a modern touch. Security is paramount, and the Adona WR1 Wardrobe doesn't disappoint. "
     },
     {
-      "id": 14,
+      "id": "14",
       "brandname": "Rustic Interior",
       "category": "Baby furniture",
       "name": "Nursery Crib",
       "shortdes": "Upgrade your child's Little Seeds Piper Metal Crib with the Metal Crib Conversion Kit .",
       "ratings": "4",
       "discount": "50",
-      "color":"black",
-      "warranty":"5",
+      "color": "black",
+      "warranty": "5",
       "disAcc": 7010,
       "price": 14020,
       "picture": "assets/Images/baby/baby.4.jpg",
@@ -271,15 +281,15 @@
       "descrip3": " Organize your clothing, accessories, or even household items with ease, thanks to the well-designed interior layout. The strong hinges ensure smooth operation and long-lasting durability, while the stylish handle adds a modern touch. Security is paramount, and the Adona WR1 Wardrobe doesn't disappoint. "
     },
     {
-      "id": 15,
+      "id": "15",
       "brandname": "Rustic Interior",
       "category": "chair",
       "name": "Liam Upholstery Barrel Chair",
       "shortdes": "Founded atop tapered wood feet in a black finish, this budget-friendly piece . ",
       "ratings": "4.3",
       "discount": "30",
-      "color":"black",
-      "warranty":"5",
+      "color": "black",
+      "warranty": "5",
       "disAcc": 9207,
       "price": 5001,
       "picture": "assets/Images/chair/chair.5.jpg",

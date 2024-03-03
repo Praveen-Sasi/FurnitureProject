@@ -1,0 +1,88 @@
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+<app-navbar></app-navbar>
+<ng-container *ngIf="showproduct.length !=0" >
+    <div class="container">
+       <h1 class="text-primary mt-5 mb-2">Cart Itms</h1>
+       <div class="row g-0">
+        <div class="col-sm-6 col-md-8">
+            <!-- <div class="card mb-3" style="max-width: 740px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img id="item" src="assets/Images/chair (1).jpg" class="img-fluid rounded-start " >
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Brand</h5>
+                      <h6 class="card-title">title</h6>
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                      <p id="last"><b class="text-dark" style="text-decoration: line-through;">price</b></p>
+                      <button class="btn btn-danger"> <i class="ri-delete-bin-5-line"></i> Remove </button>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+<div *ngFor="let product of showproduct" class="card mb-3" style="max-width: 780px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img id="item" [src]="product.picture" class="img-fluid rounded-start " >
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">{{product.brandname}}</h5>
+          <h6 class="card-title">{{product.name}}</h6>
+          <p class="card-text">{{product.shortdes}}</p>
+          <p id="last"><b class="text-dark">{{product.disAcc|currency:'INR'}}</b></p>
+          <button (click)="deleteitem(product)" class="btn btn-danger"> <i class="ri-delete-bin-5-line"></i> Remove </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-6 col-md-4">
+    <h1>Total Amount :</h1>
+    <strong style="font-size: 35px;color: green;">${{totalamount}}</strong><br>
+    <div class="btn-group mt-3">
+        <button (click)="this.addressform=true" class="btn btn-primary">Checkout</button>&nbsp;
+        <button (click)="Empty()" class="btn btn-secondary">Empty Cart</button>
+    </div>
+    <!--Forms-->
+    <div class="mt-3" *ngIf="addressform">
+    <form [formGroup]="myform">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" formControlName="email" placeholder="Email address" aria-describedby="emailHelp">
+        
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Name</label>
+        <input type="text" class="form-control" id="exampleInputPassword1" formControlName="name" placeholder="Name">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Mobile Number</label>
+        <input type="number " class="form-control" id="exampleInputPassword1" formControlName="mobile" placeholder="Mobile Number">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Address</label>
+        <textarea class="form-control" id="exampleformcontroltextarea" rows="3" formControlName="address" placeholder="Address"></textarea>
+      </div>
+      <button routerLink="/order" type="submit" (click)="onsumit()" [disabled]="this.myform.invalid" class="btn btn-success mt-2">Order</button>&nbsp;
+      <button type="submit" (click)="cancle()"  class="btn btn-dark mt-2">Cancel</button>
+    </form>
+</div>
+</div>
+<!--Forms end-->
+</div>
+
+</div>
+</ng-container>
+<ng-container *ngIf="showproduct.length == 0">
+    <!--Empty cart-->
+    <div id="empty" class="card">
+        <div class="center">
+            <h4>Your cart is Empty</h4>
+            <h6>Please add item</h6>
+            <button routerLink="/product" class="btn btn-success">Shop Now</button>
+             </div>
+
+    </div>
+</ng-container>

@@ -12,6 +12,10 @@ import { NgbRatingConfig } from '@ng-bootstrap/ng-bootstrap';
 export class ProductDescriptionComponent implements OnInit {
   
   productData:any=[];
+  showadd:boolean=true;
+  showremove:boolean=false;
+item: any;
+  products: any;
   constructor(config: NgbRatingConfig,private product:ProductsService, private activatedroute:ActivatedRoute){
     config.max=5;
     config.readonly =true;
@@ -36,4 +40,16 @@ console.log(this.productData)
   decrease(){
    this.quantity-=1
   }  
+  addtocart(productdata:any){
+    this.showadd=false;
+    this.showremove=true;
+    this.product.addtocart(productdata);
+   
+  }
+  removeitem(productdata:any){
+    this.showadd=true;
+    this.showremove=false;
+    this.product.removecartitem(productdata);
+  }
+  
 }

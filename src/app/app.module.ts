@@ -23,6 +23,8 @@ import { ProductDescriptionComponent } from './Pages/product-description/product
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule} from '@angular/common/http';
 import { ProductsComponent } from './Pages/products/products.component';
+import { CartPageComponent } from './Pages/cart-page/cart-page.component';
+import { OrderPageComponent } from './Pages/order-page/order-page.component';
 
 
 
@@ -45,6 +47,8 @@ import { ProductsComponent } from './Pages/products/products.component';
     WishlistComponent,
     ProductDescriptionComponent,
     ProductsComponent,
+    CartPageComponent,
+    OrderPageComponent,
    
    
   ],
