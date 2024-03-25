@@ -21,11 +21,11 @@ export class UsersService {
  
 }
 insertUser(regapi:any){
-  return this.http.post('http://localhost:3000/users',regapi)
+  return this.http.post('https://retoolapi.dev/gxXHnv/data',regapi)
 }
 
 getUser(getapi:any){
-  return this.http.get('http://localhost:3000/users?'+getapi)
+  return this.http.get('https://retoolapi.dev/gxXHnv/data?'+getapi)
 }
 
 }

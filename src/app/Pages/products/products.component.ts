@@ -13,7 +13,7 @@ import { ProductsService } from 'src/app/service/products.service';
 })
 export class ProductsComponent implements OnInit {
 
-  apiUrl = 'http://localhost:3000/products';
+  apiUrl = 'https://retoolapi.dev/25pmda/data';
   // discounts : any = new FormGroup({
   //   disc5 : new FormControl(''),
   //   disc10 : new FormControl('')

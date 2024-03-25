@@ -12,65 +12,65 @@ export class ProductsService {
 
   constructor(private http:HttpClient) { }
   getproduct(): Observable<any[]>{
-   return this.http.get<any[]>('http://localhost:3000/products');
+   return this.http.get<any[]>('https://retoolapi.dev/25pmda/data');
   }
   getproductbyid(id:any){
-   return this.http.get('http://localhost:3000/products/'+id);
+   return this.http.get('https://retoolapi.dev/25pmda/data'+id);
 
   }
   getProductsByFilter(apiUrl : string){
     return this.http.get(apiUrl);
   }
   getproductbycategory(category:any){
-  return this.http.get('http://localhost:3000/products/'+category);
+  return this.http.get('https://retoolapi.dev/25pmda/data'+category);
   }
   sofafilter(){
-   return this.http.get('http://localhost:3000/products?category=sofa');
+   return this.http.get('https://retoolapi.dev/25pmda/data?category=sofa');
   }
   chairfilter(){
-    return this.http.get('http://localhost:3000/products?category=chair');
+    return this.http.get('https://retoolapi.dev/25pmda/data?category=chair');
    }
    swingfilter(){
-    return this.http.get('http://localhost:3000/products?category=swing');
+    return this.http.get('https://retoolapi.dev/25pmda/data?category=swing');
    }
    cubboardfilter(){
-    return this.http.get('http://localhost:3000/products?category=cupboard');
+    return this.http.get('https://retoolapi.dev/25pmda/data?category=cupboard');
    }
    babyfilter(){
-    return this.http.get('http://localhost:3000/products?category=Baby furniture');
+    return this.http.get('https://retoolapi.dev/25pmda/data?category=Baby furniture');
    }
    tablefilter(){
-    return this.http.get('http://localhost:3000/products?category=table');
+    return this.http.get('https://retoolapi.dev/25pmda/data?category=table');
    }
    bedfilter(){
-    return this.http.get('http://localhost:3000/products?category=bed');
+    return this.http.get('https://retoolapi.dev/25pmda/data?category=bed');
    }
    dis5filter(){
-    return this.http.get('http://localhost:3000/products?discount=5%');
+    return this.http.get('https://retoolapi.dev/25pmda/data?discount=5%');
    }
    dis10filter(){
-    return this.http.get('http://localhost:3000/products?discount=10%');
+    return this.http.get('https://retoolapi.dev/25pmda/data?discount=10%');
    }
    dis20filter(){
-    return this.http.get('http://localhost:3000/products?discount=20%');
+    return this.http.get('https://retoolapi.dev/25pmda/data?discount=20%');
    }
    dis30filter(){
-    return this.http.get('http://localhost:3000/products?discount=30%');
+    return this.http.get('https://retoolapi.dev/25pmda/data?discount=30%');
    }
    dis40filter(){
-    return this.http.get('http://localhost:3000/products?discount=40%');
+    return this.http.get('https://retoolapi.dev/25pmda/data?discount=40%');
    }
    dis50filter(){
-    return this.http.get('http://localhost:3000/products?discount=50%');
+    return this.http.get('https://retoolapi.dev/25pmda/data?discount=50%');
    }
    dis60filter(){
-    return this.http.get('http://localhost:3000/products?discount=60%');
+    return this.http.get('https://retoolapi.dev/25pmda/data?discount=60%');
    }
    dis70filter(){
-    return this.http.get('http://localhost:3000/products?discount=70%');
+    return this.http.get('https://retoolapi.dev/25pmda/data?discount=70%');
    }
    premDeal(){
-    return this.http.get('http://localhost:3000/products?rating=4');
+    return this.http.get('https://retoolapi.dev/25pmda/data?rating=4');
    }
   addtocart(data:any){
      this.cartitemlist.push(data);
